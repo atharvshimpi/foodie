@@ -1,0 +1,200 @@
+.restaurant-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: calc(50vh - 60vh);
+    background: rgba(403, 44, 63, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .restaurant-details-container {
+        min-height: calc(100vh);
+    }
+}
+
+.restaurant-details-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: calc(35vh);
+    background: #171a29;
+    position: sticky;
+    -webkit-position: sticky;
+    top: 0;
+    max-width: 100%;
+    z-index: 9;
+}
+
+@media screen and (max-width: 768px) {
+    .restaurant-details-header {
+        flex-direction: column;
+        position: relative;
+        top: 60px;
+    }
+}
+
+.restaurant-details-img {
+    width: 254px;
+    height: 165px;
+}
+
+@media screen and (max-width: 768px) {
+    .restaurant-details-img {
+        margin-top: 20px;
+    }
+}
+
+.restaurant-details-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+.restaurant-details-title {
+    max-width: 538px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .restaurant-details-title {
+        margin-top: 20px;
+    }
+}
+
+.restaurant-details-tags {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: inherit;
+    opacity: .7;
+    font-size: 15px;
+    max-width: 538px;
+    margin-top: 10px;
+}
+
+.restaurant-details-subinfo2 {
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.restaurant-details-subinfo2-container {
+    padding: 0 35px;
+    display: inline-block;
+    border-right: 1px solid hsla(0,0%,100%,.2);
+}
+
+.restaurant-details-subinfo2-container:first-child {
+    padding-left: 0;
+    padding-right: 35px;
+}
+
+.restaurant-details-subinfo2-container:last-child {
+    border-right: none;
+    padding-left: 35px;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .restaurant-details-subinfo2-container, .restaurant-details-subinfo2-container:first-child,.restaurant-details-subinfo2-container:last-child {
+        padding: 0 15px;
+    }
+
+}
+
+.restaurant-details-subinfo2-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant-details-subinfo2-title {
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.restaurant-details-subinfo2-star {
+    margin-right: 6px;
+    font-size: 17px;
+    position: relative;
+    top: 4px;
+}
+
+.restaurant-details-offer {
+    color: #fff;
+    width: 298px;
+    padding: 74px 0 48px;
+    height: 100%;
+}
+
+.restaurant-details-offer-border {
+    transform: translateZ(0);
+    transition: transform .2s ease-in-out;
+    border: 1px solid #bec0c8;
+    position: relative;
+}
+
+.restaurant-details-offer-title {
+    color: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #171a29;
+    display: inline-block;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    position: absolute;
+    top: -13px;
+    left: -6px;
+}
+
+.restaurant-details-offer-info {
+    padding: 31px 40px 25px 25px;
+}
+
+.restaurant-details-offer-info-body {
+    display: flex;
+    z-index: -1;
+    line-height: 17px;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.restaurant-details-offer-info-body:first-child {
+    margin-top: 0;
+}
+
+.restaurant-details-offer-icon {
+    margin-right: 10px;
+    font-size: 22px;
+    align-self: baseline;
+}
+
+.restaurant-details-offer-content {
+    font-size: 14px;
+    color: inherit;
+    opacity: .9;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.restaurant-details-main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurant-details-main-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .restaurant-details-main-content {
+        margin-top: 60px;
+    }
+}
