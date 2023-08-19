@@ -3,7 +3,7 @@ import axios from "axios";
 const user = JSON.parse(localStorage.getItem('user'));
 
 const API = axios.create({ 
-    baseURL: 'http://localhost:5000',
+    baseURL: 'https://tiny-fox-nightgown.cyclic.cloud',
     headers: {
         'Authorization': user ? `Bearer ${user.token}` : ''
     }
