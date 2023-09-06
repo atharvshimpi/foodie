@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
 
 import { login, isUserAuthenticated } from "../actions/authActions";
 
@@ -23,18 +22,20 @@ const Login = ({ location }) => {
     const area = JSON.parse(localStorage.getItem('location'));
     const auth = useSelector(state => state.auth);
     const { isAuthenticated } = auth;
-    const redirect = location.search ? location.search.split('=')[1] : `/${area}/restaurants`;
-    const history = useHistory();
     const dispatch = useDispatch();
 
     // If user is logged in, redirect user to home
     useEffect(() => {
+        const redirect = location.search ? location.search.split('=')[1] : `/${area}/restaurants`;
+
         if(!isAuthenticated) {
             dispatch( isUserAuthenticated() );
         }
         if(isAuthenticated) {
             window.location.assign(redirect);
         }
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [dispatch, isAuthenticated]);
 
     const handleSubmit = (e) => {

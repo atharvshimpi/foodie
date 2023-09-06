@@ -38,6 +38,8 @@ const Register = ({ location }) => {
         if(success) {
             history.push('/login');
         }
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [dispatch, history, isAuthenticated, success]);
 
     const handleSubmit = (e) => {

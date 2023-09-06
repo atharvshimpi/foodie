@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory, useParams } from "react-router-dom";
 
 import { FaStar } from "react-icons/fa";
-import { RestaurantCardContainer, RestaurantCardImageContainer, RestaurantCardImage, RestaurantCardTitle, RestaurantCardTags, RestaurantCardInfo, RestaurantCardRatingContainer, RestaurantCardRating, RestaurantCardETA, RestaurantCardAvgCost, RestaurantCardHr, RestaurantCardOffer } from "./Elements";
+import { RestaurantCardContainer, RestaurantCardImageContainer, RestaurantCardImage, RestaurantCardTitle, RestaurantCardTags, RestaurantCardInfo, RestaurantCardRatingContainer, RestaurantCardRating, RestaurantCardETA, RestaurantCardAvgCost, RestaurantCardOffer } from "./Elements";
 import restaurantTemplate from "../../images/templates/foodTemplate.jpg";
 
 /**

@@ -1,9 +1,8 @@
 import React from "react";
 
-import moment from "moment";
 import Food from "../../images/templates/foodTemplate2.jpg";
 import { BiFoodTag } from "react-icons/bi";
-import { CartItemsContainer, CartItemsContent, CartItemsSubContent, CartItemsSubContentLeft, CartItemsSubContentRestaurant, CartItemsSubContentIcon, CartItemsSubContentTitle, CartItemsSubContentP, CartItemsSubContentCost, CartItemsSubContentDescription, CartItemsSubContentMiddle, CartItemsSubContentRight, CartItemsSubContentImageContainer, CartItemsSubContentImage, CartItemsSubContentButtonContainer, CartItemsSubContentRed, Rupee } from "./Elements";
+import { CartItemsContainer, CartItemsContent, CartItemsSubContent, CartItemsSubContentLeft, CartItemsSubContentRestaurant, CartItemsSubContentIcon, CartItemsSubContentTitle, CartItemsSubContentP, CartItemsSubContentCost, CartItemsSubContentMiddle, CartItemsSubContentRight, CartItemsSubContentImageContainer, CartItemsSubContentImage, CartItemsSubContentButtonContainer, Rupee } from "./Elements";
 
 /**
 * @author

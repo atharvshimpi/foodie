@@ -26,6 +26,8 @@ const MyOrders = (props) => {
         if(!user) {
             history.push(`/${area}/restaurants`);
         }
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return(

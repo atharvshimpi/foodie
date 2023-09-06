@@ -7,7 +7,7 @@ import { GoSignIn } from "react-icons/go";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 import { Button } from "@material-ui/core";
-import { SidenavContainer, SidenavHeader, SidenavHeading, SidenavCloseBtn, SidenavHr, SidenavLinksWrapper, SidenavLink, SidenavVideoWrapper, Video } from "./Elements";
+import { SidenavContainer, SidenavHeader, SidenavHeading, SidenavCloseBtn, SidenavHr, SidenavLinksWrapper, SidenavLink, SidenavVideoWrapper } from "./Elements";
 import { AiOutlineClose } from "react-icons/ai";
 
 /**

@@ -42,6 +42,8 @@ const Summary = (props) => {
         if(success) {
             history.push(`/order/${order._id}`);
         }
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [history, success])
 
     return(

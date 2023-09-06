@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 
 import LoginTemplate from "../../images/templates/loginTemplate.png";
 import BreadCrumbs from "../../components/Misc/BreadCrumbs";
-import { MainContainer, BreadCrumbsContainer, CheckoutContainer, CheckoutColumn, CheckoutCard, CheckoutHeading, CheckoutIcon, CheckoutP, CheckoutLoginImage, CheckoutAuthButton, CheckoutBillSummary } from "./Elements";
+import { MainContainer, BreadCrumbsContainer, CheckoutContainer, CheckoutColumn, CheckoutCard, CheckoutHeading, CheckoutP, CheckoutLoginImage, CheckoutAuthButton, CheckoutBillSummary } from "./Elements";
 
 /**
 * @author

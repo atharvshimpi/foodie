@@ -1,7 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { DeviceUUID } from "device-uuid";
 
 import { addToCart, deleteFromCart } from "../../actions/cartActions";
 

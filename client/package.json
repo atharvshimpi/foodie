@@ -12,14 +12,14 @@
     "axios": "^0.21.1",
     "device-uuid": "^1.0.4",
     "moment": "^2.29.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-elastic-carousel": "^0.11.5",
     "react-icons": "^4.2.0",
     "react-redux": "^7.2.4",
     "react-responsive": "^9.0.0-beta.3",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^4.0.3",
     "react-scroll": "^1.8.3",
     "react-sticky": "^6.0.3",
     "redux": "^4.1.1",
@@ -30,7 +30,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -52,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }

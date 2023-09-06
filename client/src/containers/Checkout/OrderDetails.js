@@ -23,6 +23,8 @@ const OrderDetails = (props) => {
         setTimeout(function() {
             window.location.replace(`/${area}/restaurants`);
         }, 5000);
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [dispatch, id])
 
     return(

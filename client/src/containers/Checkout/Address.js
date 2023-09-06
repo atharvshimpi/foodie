@@ -49,7 +49,6 @@ const Address = (props) => {
                                         onChange={ handleChange }
                                         value={ addressData.address }
                                         id="address"
-                                        fullWidth 
                                         variant="filled"
                                         label="Address"
                                     />
@@ -61,7 +60,6 @@ const Address = (props) => {
                                         onChange={ handleChange }
                                         value={ addressData.city }
                                         id="city"
-                                        fullWidth 
                                         variant="filled"
                                         label="City"
                                     />
@@ -73,7 +71,6 @@ const Address = (props) => {
                                         onChange={ handleChange }
                                         value={ addressData.state }
                                         id="state"
-                                        fullWidth 
                                         variant="filled"
                                         label="State"
                                     />
@@ -85,7 +82,6 @@ const Address = (props) => {
                                         onChange={ handleChange }
                                         value={ addressData.country }
                                         id="country"
-                                        fullWidth 
                                         variant="filled"
                                         label="Country"
                                     />
@@ -97,7 +93,6 @@ const Address = (props) => {
                                         onChange={ handleChange }
                                         value={ addressData.zipcode }
                                         id="zipcode"
-                                        fullWidth 
                                         variant="filled"
                                         label="ZipCode"
                                     />

@@ -10,21 +10,21 @@ export const useStyles = makeStyles({
         marginTop: '60px',
         minHeight: 'calc(100vh - 60px)',
         background: 'rgba(403, 44, 63, 0.1)',
-        ['@media (max-width: 768px)']: {
+        '@media (max-width: 768px)': {
             minHeight: 'calc(100vh)'
         }
     },
     top: {
         display: 'flex',
         width: '100%',
-        ['@media (max-width: 768px)']: {
+        '@media (max-width: 768px)': {
             flexDirection: 'column'
         }
     },
     img: {
         maxWidth: '70%',
         minHeight: 'calc(100vh - 60px)',
-        ['@media (max-width: 768px)']: {
+        '@media (max-width: 768px)': {
             display: 'none'
         }
     },
@@ -45,7 +45,7 @@ export const useStyles = makeStyles({
         display: 'flex',
         justifyContent: 'center',
         width: '100%',
-        ['@media (max-width: 768px)']: {
+        '@media (max-width: 768px)': {
             display: 'inline-block',
             textAlign: 'center',
             fontSize: '100%',
@@ -74,7 +74,7 @@ export const useStyles = makeStyles({
         fontSize: '2rem',
         fontWeight: 'bold',
         letterSpacing: '3px',
-        ['@media (max-width: 768px)']: {
+        '@media (max-width: 768px)': {
             fontSize: '24px'
         }
     },
@@ -82,7 +82,7 @@ export const useStyles = makeStyles({
         display: 'flex',
         justifyContent: 'center',
         marginBottom: '20px',
-        ['@media (max-width: 768px)']: {
+        '@media (max-width: 768px)': {
             marginTop: '-100px'
         }
     },
