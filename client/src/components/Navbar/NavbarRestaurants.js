@@ -127,7 +127,7 @@ const NavbarRestaurants = ({ isOpen, toggleOpen }) => {
                     </Button>
                 </Link>
                 { user ? (
-                    <Link className={classes.link}>
+                    <>
                         <Button 
                             className={classes.button}
                             startIcon={ <MdArrowDropDown /> }
@@ -142,13 +142,14 @@ const NavbarRestaurants = ({ isOpen, toggleOpen }) => {
                             anchorEl={ userAnchorEl }
                             open={Boolean(userAnchorEl)}
                             onClose={ () => setUserAnchorEl(null) }
+                            onClick={ () => console.log("Log: " + userAnchorEl) }
                         >
                             
                             <MenuItem onClick={ () => { window.location.assign('/myprofile') } }>My Profile</MenuItem>
                             <MenuItem onClick={ () => { window.location.assign('/myorders') } }>My Orders</MenuItem>
                             <MenuItem onClick={ () => { dispatch( logout(history) ) } }>Logout</MenuItem>
                         </Menu>
-                    </Link>
+                    </>
                 ) : (
                     <Link className={classes.link} to='/login'>
                         <Button 
