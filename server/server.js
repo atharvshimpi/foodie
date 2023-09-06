@@ -15,7 +15,7 @@ const app = express();
 dotenv.config();
 
 app.get('/', (req, res) => {
-    res.send("Welcome to Roovie App!")
+    res.send("Welcome to Foodie App!")
 });
 
 // middleware bodyParser code
@@ -41,8 +41,12 @@ mongoose.connect(process.env.MONGO_URI, {
     useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false
-}).then(() => {
+})
+.then(() => {
     console.log("Connection to mongoDB atlas established!");
+})
+.catch((err) => {
+    console.log("Message: " + err);
 });
 
 app.use('/restaurant', restaurantRoutes);

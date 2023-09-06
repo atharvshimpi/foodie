@@ -16,6 +16,7 @@ import SearchPage from "./pages/SearchPage";
 import HelpPage from "./pages/HelpPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import NotFound from "./components/Error/NotFound";
 
 function App() {
     const [isOpen, setIsOpen] = useState(false);
@@ -72,6 +73,9 @@ function App() {
                     ) } />
                     <Route path="/help" render={ (props) => (
                         <HelpPage { ...props } isOpen={ isOpen } toggleOpen={ toggleOpen } />
+                    ) } />
+                    <Route path="*" render={ (props) => (
+                        <NotFound { ...props } />
                     ) } />
                 </Switch>
         </Router>

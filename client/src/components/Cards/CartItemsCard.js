@@ -20,7 +20,6 @@ import { CartItemsContainer, CartItemsContent, CartItemsSubContent, CartItemsSub
 **/
 
 const CartItemsCard = ({ food }) => {
-    // var deviceId = new DeviceUUID().get();
     const dispatch = useDispatch();
     const history = useHistory();
 
